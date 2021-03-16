@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************************* 
+            Base Styles
+**************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0 30px;
+}
+
+
+/************************************* 
+            header Styles
+**************************************/
+
+header{
+  margin-top: 40px;
+}
+
+h1{
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+ 
+
+}
+
+/* come back for the line */
+.line{
+  background-color: #C69D5F;
+  height: 5px;
+  width: 90px;
+  margin: 10px auto;
+}
+
+nav{
+  margin: 40px 0;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+}
+
+li{
+  list-style: none;
+  border: 1px solid #C69D5F;
+  border-radius: 5px;
+  padding: 8px 25px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+
+/************************************* 
+            Main Styles
+**************************************/
+main{
+  display: grid;
+  justify-items: center;
+  /* grid-template-columns: repeat(auto-fill, auto); */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card{
+  margin: 30px 0;
+}
+
+
+img{
+  width: 100%;
+  border: 5px solid #C69D5F;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 250px;
+}
+
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+span{
+  font-weight: 600;
+  color: #c07608;
+}
+
+.inner-card{
+  margin-top: 20px;
+  
+
+}
+.card-header{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 15px;
+}
+
+p{
+  color: rgba(80, 80, 80, 0.856);
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+/************************************* 
+            Media Queries
+**************************************/
+
+@media only screen and (min-width:560px){
+
+  nav{
+    max-width: 649px;
+    margin: 30px auto;
+  }
+
+  ul{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+ .card{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+ }
+
+ .inner-card{
+   margin: 0 0 0 30px;
+ }
+
+ img{
+   height: 150px;
+ }
+}
+
+@media only screen and (min-width:768px){
+  main{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+    /* grid-auto-flow: column; */
+  }
+
+ .card{
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+ }
+
+ .inner-card{
+   margin: 0 0 0 30px;
+ }
+
+
+
+}
